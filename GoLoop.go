@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 
 	//1. for문
@@ -54,4 +56,9 @@ func main() {
 END:
 	println("End")
 
+	for i, r := range "가나다" {
+		fmt.Println(i, r) // rune으로써 표현됨
+	}
+
+	fmt.Println(len("가나다"))
 }
